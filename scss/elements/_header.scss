@@ -1,0 +1,62 @@
+.main-nav{
+	transition-duration:.4s;
+	background-color:white;
+	box-shadow:none;
+	border:none;
+	padding:$baseline/2 0;
+	.logo-svg{
+		//to-do:add it
+	}
+	.navbar-brand{
+		padding-top:0;
+		padding-bottom:0;
+	}
+	a{
+		&.navbar-brand{
+			position:relative;
+			top:16px;
+		}
+	}
+	span.menu-text{
+		font-family:$regular-font-name;
+		font-weight:900;
+		text-transform:uppercase;
+		font-size:9px;
+		margin-right:5px;
+		letter-spacing:1.5px;
+		color:$black-color;
+	}
+	.md-menu{
+		font-size:18px;
+	}
+	ul.main-links{
+		padding:6px 0;
+		li{
+			font-family:$regular-font-name;
+			font-weight:900;
+			text-transform:uppercase;
+			font-size:.6em;
+			letter-spacing:1.5px;
+			float: left;
+			a{
+				transition-duration:.2s;
+				color:$body-text-color;
+				&:hover{
+					color:$primary-color;
+					background:transparent;
+				}
+				&:focus{
+					background:transparent;
+				}
+			}
+		}
+	}
+	.btn{
+		padding:$baseline/2.5 $baseline;
+		font-size:.7em;
+		  @include breakpoint(md) {
+		    width:100%;
+		  }
+	}
+}
+

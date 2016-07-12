@@ -1,0 +1,13 @@
+.home-line{
+	width: 71%;
+	display: block;
+	float: left;
+	height:1px;
+	background-color:$primary-color;
+	position:relative;
+	top:25px;
+	left:25px;
+  @include breakpoint(sm) {
+    display: none;
+  }
+}

@@ -1,0 +1,48 @@
+ul{
+	margin-left:$baseline;
+	margin-bottom:$baseline*1.5;
+	color:shade($body-text-color,20%);
+	&.list-centered{
+		display:inline-block;
+	}
+}
+
+
+.check{
+	.fa{
+		color:$primary-color;
+	}
+	border:1px solid $primary-color;
+	padding:10px 13px;
+	border-radius:100px;
+}
+
+.check-list{
+	.media{
+		.media-body{
+			padding-top:8px;
+			@include breakpoint(sm) {
+			padding-top:0;
+			}
+			&:before{
+				width: 100%;
+				float: left;
+				display: inline-block;
+				height:1px;
+				background:$primary-color;
+				content:"";
+				position:relative;
+				top:15px;
+				@include breakpoint(sm) {
+				display: none;
+				}
+			}
+			h5{
+				position:relative;
+				background: white;
+				float: left;
+				padding:5px;
+			}
+		}
+	}
+}
